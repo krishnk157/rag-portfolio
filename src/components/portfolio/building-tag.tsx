@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { motion } from "motion/react";
 
 const lines = [
@@ -11,7 +12,11 @@ const lines = [
 ];
 
 export function BuildingTag() {
-  const line = lines[Math.floor(Math.random() * lines.length)];
+  const [line, setLine] = useState(lines[0]);
+
+  useEffect(() => {
+    setLine(lines[Math.floor(Math.random() * lines.length)]);
+  }, []);
 
   return (
     <div className="mt-4 flex items-center gap-2 font-mono text-sm text-foreground/50">
