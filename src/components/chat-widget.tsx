@@ -65,7 +65,7 @@ export function ChatWidget() {
         >
           <SheetHeader className="flex-row items-center justify-between border-b pb-3">
             <div>
-              <SheetTitle>Chat with AI</SheetTitle>
+              <SheetTitle>Ask my AI</SheetTitle>
               <SheetDescription>
                 Ask me anything about my experience
               </SheetDescription>

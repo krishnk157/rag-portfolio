@@ -45,7 +45,7 @@ export function ChatPanel({
             <div className="flex flex-1 flex-col items-center justify-center gap-2 py-12 text-center">
               <MessageCircle className="size-8 text-muted-foreground/50" />
               <p className="text-sm text-muted-foreground">
-                Ask about skills, experience, projects, or anything on the
+                Ask about my skills, experience, projects, or anything on my
                 resume.
               </p>
             </div>
@@ -78,7 +78,7 @@ export function ChatPanel({
           <PromptInputTextarea
             value={input}
             onChange={(e) => setInput(e.target.value)}
-            placeholder="Ask about Krishn's experience..."
+            placeholder="Ask about my experience..."
           />
         </PromptInputBody>
         <PromptInputFooter>
