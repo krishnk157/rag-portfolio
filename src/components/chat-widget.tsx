@@ -60,7 +60,14 @@ export function ChatWidget() {
       <Sheet open={open} onOpenChange={setOpen}>
         <SheetContent
           side={isMobile ? "bottom" : "right"}
-          className={isMobile ? "h-[85vh] sm:max-w-md" : "sm:max-w-md"}
+          // The bottom variant ships data-[side=bottom]:h-auto, which outranks a
+          // plain h-* class. Match the variant so tailwind-merge replaces it and
+          // the sheet stays a fixed height instead of growing with the messages.
+          className={
+            isMobile
+              ? "data-[side=bottom]:h-[85dvh] sm:max-w-md"
+              : "sm:max-w-md"
+          }
           showCloseButton={false}
         >
           <SheetHeader className="flex-row items-center justify-between border-b pb-3">

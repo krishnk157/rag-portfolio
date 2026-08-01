@@ -38,8 +38,8 @@ export function ChatPanel({
   onSubmit: (message: PromptInputMessage) => void;
 }) {
   return (
-    <div className="flex flex-1 flex-col overflow-hidden px-4 pb-4">
-      <Conversation className="h-full">
+    <div className="flex min-h-0 flex-1 flex-col overflow-hidden px-4 pb-4">
+      <Conversation className="min-h-0">
         <ConversationContent>
           {messages.length === 0 && (
             <div className="flex flex-1 flex-col items-center justify-center gap-2 py-12 text-center">
