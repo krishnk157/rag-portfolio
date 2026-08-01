@@ -133,3 +133,36 @@
     scroll-margin-top: 2rem;
   }
 }
+
+.dot-grid {
+  background-image: radial-gradient(circle, oklch(0.145 0 0 / 6%) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.dark .dot-grid {
+  background-image: radial-gradient(circle, oklch(0.985 0 0 / 6%) 1px, transparent 1px);
+}
+
+.section-alt {
+  background: oklch(0.98 0 0);
+}
+
+.dark .section-alt {
+  background: oklch(0.17 0 0);
+}
+
+.card-hover {
+  transition: box-shadow 0.3s cubic-bezier(0.23, 1, 0.32, 1),
+              transform 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .card-hover:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px oklch(0 0 0 / 8%);
+  }
+
+  .dark .card-hover:hover {
+    box-shadow: 0 8px 30px oklch(0 0 0 / 30%);
+  }
+}

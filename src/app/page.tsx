@@ -1,6 +1,7 @@
 import { AnimatedSection } from "@/components/portfolio/animated-section";
 import { Education } from "@/components/portfolio/education";
 import { Experience } from "@/components/portfolio/experience";
+import { Footer } from "@/components/portfolio/footer";
 import { Hero } from "@/components/portfolio/hero";
 import { Projects } from "@/components/portfolio/projects";
 import { Skills } from "@/components/portfolio/skills";
@@ -18,17 +19,22 @@ export default function Home() {
         <Experience entries={RESUME.experience} />
       </AnimatedSection>
       <Separator />
-      <AnimatedSection id="projects" delay={0.1}>
-        <Projects entries={RESUME.projects} />
-      </AnimatedSection>
+      <div className="section-alt">
+        <AnimatedSection id="projects" delay={0.1}>
+          <Projects entries={RESUME.projects} />
+        </AnimatedSection>
+      </div>
       <Separator />
       <AnimatedSection id="skills" delay={0.1}>
         <Skills categories={RESUME.skills} />
       </AnimatedSection>
       <Separator />
-      <AnimatedSection id="education" delay={0.1}>
-        <Education entries={RESUME.education} />
-      </AnimatedSection>
+      <div className="section-alt">
+        <AnimatedSection id="education" delay={0.1}>
+          <Education entries={RESUME.education} />
+        </AnimatedSection>
+      </div>
+      <Footer />
     </main>
   );
 }

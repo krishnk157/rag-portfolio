@@ -22,8 +22,8 @@ export function Projects({ entries }: { entries: Project[] }) {
             <Card
               className={
                 project.status === "building"
-                  ? "border-dashed border-border/60"
-                  : undefined
+                  ? "card-hover border-dashed border-border/60"
+                  : "card-hover"
               }
             >
               <CardHeader>

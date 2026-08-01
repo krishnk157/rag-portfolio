@@ -22,7 +22,7 @@ export function Experience({ entries }: { entries: ExperienceType[] }) {
             <AnimatedSection key={entry.period} delay={i * 0.05}>
               <div className="relative md:pl-10">
                 <div className="absolute top-5 left-[9px] hidden size-2.5 rounded-full bg-foreground md:block" />
-                <Card>
+                <Card className="card-hover">
                   <CardHeader>
                     <div className="flex flex-wrap items-center gap-2">
                       <CardTitle className="text-lg font-semibold">
