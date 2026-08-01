@@ -67,7 +67,7 @@ export function ChatWidget() {
             <div>
               <SheetTitle>Chat with AI</SheetTitle>
               <SheetDescription>
-                Ask me anything about Krishn&apos;s experience
+                Ask me anything about my experience
               </SheetDescription>
             </div>
             <button
